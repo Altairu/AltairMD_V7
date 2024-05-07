@@ -5,7 +5,7 @@
 
 https://github.com/Altairu/AltairMD_V7
 ---
-### **仕様**
+# **仕様**
 * 30V~10V(フォトカプラを変更すると10V以下も可)
 * 最大40A 
 
@@ -16,11 +16,12 @@ https://github.com/Altairu/AltairMD_V7
 |HIGH|HIGH	|LOW	|正転|
 |HIGH|HIGH	|HIGH	|`ブレーキ`（非推奨）|
 |LOW|X	|X	|0|
-### **降圧**
+
+## **三端子レギュレーター** 
+### **[NJM7812SDL1]()**
 ![](image/三端子.png)
 ![](image/三端子PCB.png) 
-### **三端子レギュレーター** 
-### **[NJM7812SDL1]()**
+
 * **12Vに降圧**
 * **端子が3つ(入力・グラウンド・出力）**
 * **三端子レギュレータは落とした分の電圧をすべて`熱`として消費**
@@ -30,7 +31,6 @@ https://github.com/Altairu/AltairMD_V7
 コンデンサは入力側と出力側に0.1～10[uF]程度入れるのが一般的
 
 
----
 ## **フォトカプラ**
 ![](image/フォトカプラ.png)
 
@@ -44,8 +44,6 @@ https://github.com/Altairu/AltairMD_V7
 * 上昇応答時間：95ns
 * 下降応答時間：110ns
 
-
----
 ## **MOSFET**
 [**RSJ400N10**](https://www.rohm.co.jp/products/mosfets/small-signal/single-nch/rsj400n10-product)
 Nch 100V 40A Power MOSFET
@@ -60,7 +58,6 @@ Nch 100V 40A Power MOSFET
 
 ゲート抵抗は10[Ω]で設定している
 
----
 ### **ハーフブリッジゲートドライバ**
 ### [**IR2302STRPBF**](https://akizukidenshi.com/catalog/g/g115656/)
 ![](image/ir2302PCB.png) 
@@ -79,10 +76,6 @@ Hが入力されるとハイサイド、Lが入力されるとローサイドが
 # Ｈブリッジ回路
 ![width:1000px](image/HブリッジPCB.png) 
 
----
-<br>
-<br>
-
 | Ps1 | Ps2 | Q1  | Q2  | Q3  | Q4  | 1    | 2    | 
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | 
 | L   | L   | H   | L   | H   | L   | open | open | 
@@ -90,20 +83,3 @@ Hが入力されるとハイサイド、Lが入力されるとローサイドが
 | H   | L   | L   | L   | H   | H   | H    | L    | 
 | H   | H   | H   | H   | H   | H   | L    | L    | 
 
-# 正回転
-
-![bg right:60% width:500px](image/1_files/4f8aed0cbb3d233e4912fb6e8aac236a.png)
-
-[Hatena Electronics](https://practicalelectronicsblog.com/hbridge/)
-
-# 逆回転
-![bg right:60% width:500px](image/1_files/165cf2e3f7085f0288b2cf0e68efcce5.png)
-
-[Hatena Electronics](https://practicalelectronicsblog.com/hbridge/)
-
-# ブレーキ
-![bg right:60% width:500px](image/1_files/498ec3ddbcb9075836d5a820f88e3163.png)
-
-[Hatena Electronics](https://practicalelectronicsblog.com/hbridge/)
-
-https://practicalelectronicsblog.com/hbridge/  より
