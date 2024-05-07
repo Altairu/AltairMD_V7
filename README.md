@@ -45,7 +45,8 @@ https://github.com/Altairu/AltairMD_V7
 * 下降応答時間：110ns
 
 ## **MOSFET**
-[**RSJ400N10**](https://www.rohm.co.jp/products/mosfets/small-signal/single-nch/rsj400n10-product)
+### [**RSJ400N10**](https://www.rohm.co.jp/products/mosfets/small-signal/single-nch/rsj400n10-product)
+
 Nch 100V 40A Power MOSFET
 
 ![](image/fet.png)
